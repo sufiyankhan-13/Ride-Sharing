@@ -1,10 +1,10 @@
-**# Car Pooling App Backend - API Documentation**
+# Car Pooling App Backend - API Documentation
 
-**### Base URL**
+### Base URL
 
 `http://localhost:3000/api`
 
-**### Authentication**
+### Authentication
 
 Most APIs require authentication using a JWT (JSON Web Token).
 
@@ -14,11 +14,11 @@ Include the token in the Authorization header:
 
 `Authorization: Bearer <token>`
 
-**### API Endpoints**
+### API Endpoints
 
-**#### 1. User Management**
+#### 1. User Management
 
-**##### 1.1 Register a New User**
+##### 1.1 Register a New User
 
 **Endpoint:** POST `/users/register`
 
@@ -49,7 +49,7 @@ Include the token in the Authorization header:
 
 - `500 Internal Server Error`: If there is a server-side error.
 
-**##### 1.2 Login User**
+##### 1.2 Login User
 
 **Endpoint:** POST `/users/login`
 
@@ -74,7 +74,7 @@ Include the token in the Authorization header:
 
 - `500 Internal Server Error`: If there is a server-side error.
 
-**#### 2. Ride Management**
+#### 2. Ride Management
 
 **##### 2.1 Create a New Ride**
 
@@ -117,7 +117,7 @@ Include the token in the Authorization header:
 
 - `500 Internal Server Error`: If there is a server-side error.
 
-**##### 2.2 Get Available Rides**
+##### 2.2 Get Available Rides
 
 **Endpoint:** GET `/rides`
 
@@ -144,7 +144,7 @@ Include the token in the Authorization header:
 
 - `500 Internal Server Error`: If there is a server-side error.
 
-**##### 2.3 Book a Ride**
+##### 2.3 Book a Ride
 
 **Endpoint:** POST `/rides/book`
 
@@ -192,9 +192,9 @@ Include the token in the Authorization header:
 
 - `500 Internal Server Error`: If there is a server-side error.
 
-**#### 3. Rating Management**
+#### 3. Rating Management
 
-**##### 3.1 Add a Rating**
+##### 3.1 Add a Rating
 
 **Endpoint:** POST `/ratings`
 
@@ -229,7 +229,7 @@ Include the token in the Authorization header:
 
 - `500 Internal Server Error`: If there is a server-side error.
 
-**##### 3.2 Get Ratings for a User**
+##### 3.2 Get Ratings for a User
 
 **Endpoint:** GET `/ratings/:userId`
 
